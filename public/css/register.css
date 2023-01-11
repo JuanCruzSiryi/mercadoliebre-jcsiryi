@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+/* -----------------------------HEADER ------------------*/
+
+/* -----------------------------MAIN ------------------*/
+
+.register-form {
+    margin: 20px;
+    background-color: rgba(232, 201, 161, 1);
+    border-radius: 6px;
+    
+}
+
+.register-form form {
+    padding: 10px;
+}
+
+
+
+
+
+/* -----------------------------FOOTER ------------------*/

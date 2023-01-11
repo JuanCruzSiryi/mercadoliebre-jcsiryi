@@ -5,16 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
+    <script src="https://kit.fontawesome.com/7a2f3903ee.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
 
     </header>
 
     <main>
-        <form action="/register">
+        <div class="register-form">
+            <form action="/" method="">
+                <input type="text" name="name" placeholder="Nombre y apellido">
+                <br>
+                <input type="text" name="user" placeholder="Nombre de usuario">
+                <br>
+                <input type="email" name="email" placeholder="E-Mail">
+                <br>
+                <label for="date">Fecha de nacimiento</label>
+                <br>
+                <input type="date" name="date" id="date">
+                <br>
+                <input type="text" name="address" id="address" placeholder="Domicilio">
+                <br>
+                <label for="">Perfil del usuario</label>
+                <br>
+                <label><input type="radio" value="comprador" name="user-profile" id=""> Comprador</label>
+                <label><input type="radio" value="vendedor" name="user-profile" id=""> Vendedor</label>
+                <br>
+                <label for="">Intereses</label>
+                <br>
+                <label><input type="checkbox" name="electro" value="1"> Electro</label>
+                <br>
+                <label><input type="checkbox" name="moda" value="2"> Moda</label>
+                <br>
+                <label><input type="checkbox" name="hogar" value="3"> Hogar</label>
+                <br>
+                <label><input type="checkbox" name="juguetería" value="4"> Juguetería</label>
+                <br>
+                <label><input type="checkbox" name="vida-sana" value="5"> Vida Sana</label>
+                <br>
+                <input type="file" name="photo" id="photo">
+                <br>
+                <input type="password" name="password" placeholder="Escriba su contraseña">
+                <br>
+                <input type="password" name="password-confirm" placeholder="Confirme su contraseña">
+                <br>
+                <button type="submit">
+                Enviar
+                </button>
+                <br>
+                <button type="reset">
+                Borrar
+                </button>
 
-        </form>
+            </form>
+        </div>
     </main>
 
     <footer>
