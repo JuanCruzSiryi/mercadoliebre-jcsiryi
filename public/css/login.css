@@ -6,18 +6,180 @@
 }
 
 /* -----------------------------HEADER ------------------*/
+header {
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.main-navbar {
+     display: none
+}
+
+input {
+    padding: 3px;
+    margin: 3px;
+}
+
+button {
+    padding: 3px;
+    margin: 5px;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.copy-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.burger-menu {
+    background-color: blue;
+    border-radius: 8px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.fa-bars {
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    background-color: white;
+    border-radius: 6px;
+    padding-right: 7px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+}
+
+@media (min-width: 361px) {
+    
+}
+
+@media (min-width: 768px){
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+    .search {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-left: 5%;
+    }
+    .search input {
+        width: 40vw;
+        margin-left: 5%;
+        height: 30px;
+    }
+}
+
+@media (min-width: 1200px){
+    .logo {
+        width: 200px;
+    }
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar {
+        align-items: center;
+    }
+    .copy-header {
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0;
+        font-weight: bold;
+    }
+    .main-navbar {
+        margin-top: 30px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+}
 
 /* -----------------------------MAIN ------------------*/
 
 main {
     background-color: rgb(225, 221, 221);
     width: 100%;
+    height: 350px;
 }
 
 .login-form {
     background-color: rgb(225, 221, 221);
     margin: 10%;
     width: 80%;
+    margin-top: 0px;
+    margin-bottom: 5%;
 }
 
 .login-form form {
@@ -41,13 +203,60 @@ main {
     border-radius: 4px;
     padding: 10px;
     width: 100%;
-    background-color: rgb(6, 6, 143);
-    color: white;
     font-weight: bold;
+    font-size: 16px;
+}
+
+.login-form button:focus {
+    background-color: #0022AA;
+    color: white;
 }
 
 @media (min-width: 768px) {
-
+    .login-form form input, .login-form form button {
+        width: 60%;
+    }
 }
 
 /* -----------------------------FOOTER ------------------*/
+
+footer {
+    text-align: center;
+}
+
+.fa-credit-card {
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+} 
+
+.fa-gift {
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.fa-user-shield {
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.copy {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 361px) {
+}
+
+@media (min-width: 769px) {
+}
+
+@media (min-width: 1200px) {   
+}

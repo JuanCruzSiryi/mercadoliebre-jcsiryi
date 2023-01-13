@@ -174,31 +174,41 @@ button {
 }
 
 /* --------------- MAIN -------------- */
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .price{
     font-size: 18px;
     flex-grow: .3;
+    width: 30%;
 }
 
 .discount {
     font-size: 16px;
     font-weight: normal;
     color: #39b54a;
+    width: 70%;
 }
 
 .description {
     font-size: 16px;
-    padding-top: 15px;
+    margin-top: 20px;
+    font-weight: normal;
+    display: none;
 }
 
 .main-article {
     border-top: #ebebeb 1px solid;
-    padding: 15px;
-    text-align: left;
-    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
+    padding: 15px;
+    align-items: baseline;
+    width: 100%;
 }
-
-
 
 section.banner img{
     width: 100%;
@@ -234,6 +244,7 @@ main section article i{
 }
 
 main section article i{
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -241,6 +252,9 @@ main section article i{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 main section h3{
@@ -266,27 +280,57 @@ article div.main-article{
         display: flex;
     }
 
-    .left-navbar {
+    main section div.products{
         display: flex;
-    }
-    .right-navbar {
-        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .description {
+        font-size: 14px;
+        font-weight: bold;
+    }
 }
 
 @media (min-width: 769px) {
-    article {
-        width: 21vw;
-        height: 60vh;
+    main section div.products article{
+        width: 22%;
     }
-    article img {
-        width: 90%;
-        height: 40vh;
+    .price,
+    .discount{
+        width: 50%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .description {
+        font-size: 16px;
+        font-weight: bold;
     }
 }
 
 @media (min-width: 1200px) {
+    .price,
+    .discount{
+        width: 50%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .description {
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
 
 /* -------------- FOOTER ------------- */
@@ -327,6 +371,16 @@ footer {
 }
 
 @media (min-width: 769px) {
+    .elements-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 12px;
+        padding: 2%;
+    }
+    .elements-footer i:focus{
+        color: rgb(239, 116, 71);
+    }
 }
 
 @media (min-width: 1200px) {   

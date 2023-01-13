@@ -12,7 +12,41 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img class="logo" src="/images/logo-mercado-liebre.svg" class="logo de ML">
+            <div class="search">
+                <input type="text" value="Buscar produtos, marcas"/>
+                <!<button type="submit">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <h2 class="copy-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>    
+                Comprá en cuotas y sin tarjeta de crédito.
+            </h2>
+        </div>
+
+        <nav class="main-navbar">
+
+            <ul class="left-navbar">
+                <li><a href="#" target="_blank">Ofertas</a></li>
+                <li><a href="#" target="_blank">Tiendas Oficiales</a></li>
+                <li><a href="#" target="_blank">Vender</a></li>
+                <li><a href="#" target="_blank">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar">
+                <li><a href="#" target="_blank">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li> 
+                <li><a href="#" target="_blank">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="#" target="_blank">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+
+        </nav>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
 
     </header>
 
@@ -25,18 +59,18 @@
                 <br>
                 <input type="email" name="email" placeholder="E-Mail">
                 <br>
-                <label for="date">Fecha de nacimiento</label>
+                <label for="date"><b>Fecha de nacimiento</b></label>
                 <br>
                 <input type="date" name="date" id="date">
                 <br>
                 <input type="text" name="address" id="address" placeholder="Domicilio">
                 <br>
-                <label for="">Perfil del usuario</label>
+                <label for=""><b>Perfil del usuario</b></label>
                 <br>
                 <label><input type="radio" value="comprador" name="user-profile" id=""> Comprador</label>
                 <label><input type="radio" value="vendedor" name="user-profile" id=""> Vendedor</label>
                 <br>
-                <label for="">Intereses</label>
+                <label for=""><b>Intereses</b></label>
                 <br>
                 <label><input type="checkbox" name="electro" value="1"> Electro</label>
                 <br>
@@ -67,6 +101,28 @@
     </main>
 
     <footer>
+
+        <i class="fa-solid fa-credit-card"></i>
+        <h3>Pagá con tarjeta o en efectivo</h3>
+        <p class="descriptions">
+        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+        </p>
+        
+        <i class="fa-solid fa-gift"></i>
+        <h3>Envío gratis desde los $2500</h3>
+        <p class="descriptions">
+        Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+        
+        <i class="fa-solid fa-user-shield"></i>
+        <h3>Seguridad de principio a fin</h3>
+        <p class="descriptions">
+        ¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@.
+        </p>
+         
+        <h4 class="copy">
+        Copyright © 1999-2020 MercadoLiebre S.R.L.
+        </h4>
 
     </footer>
 
