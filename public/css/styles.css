@@ -103,7 +103,6 @@ button {
 }
 
 @media (min-width: 361px) {
-    
 }
 
 @media (min-width: 768px){
@@ -196,8 +195,12 @@ div.offers{
 .description {
     font-size: 16px;
     margin-top: 20px;
-    font-weight: normal;
+    font-weight: bold;
     display: none;
+}
+
+main section article:hover .description{
+    display: block;
 }
 
 .main-article {
@@ -267,13 +270,18 @@ article div.main-article{
     padding: 15px;
 }
 
-@media (min-width: 361px){
-    main section article .description{
-        display: block;
-    }
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
 
+.fa-truck:hover {
+    transition: 1000ms;
+    transform: rotate(-90deg);
+}
+
+@media (min-width: 361px){
     main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: block;
     }
 
     header ul li {
@@ -301,6 +309,7 @@ article div.main-article{
     .description {
         font-size: 14px;
         font-weight: bold;
+        display: none;
     }
 }
 
@@ -311,25 +320,28 @@ article div.main-article{
     .price,
     .discount{
         width: 50%;
-        font-size: 14px;
-        font-weight: bold;
-    }
-    .description {
         font-size: 16px;
         font-weight: bold;
     }
+    .description {
+        font-size: 18px;
+        font-weight: bold;
+        display: none;
+    }
+    
 }
 
 @media (min-width: 1200px) {
     .price,
     .discount{
         width: 50%;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: bold;
     }
     .description {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: bold;
+        display: none;
     }
 }
 
@@ -367,6 +379,10 @@ footer {
     margin-bottom: 5px;
 }
 
+.elements-footer i:hover{
+    color: rgb(239, 116, 71);
+}
+
 @media (min-width: 361px) {
 }
 
@@ -378,10 +394,24 @@ footer {
         font-size: 12px;
         padding: 2%;
     }
-    .elements-footer i:focus{
-        color: rgb(239, 116, 71);
+    
+    .banner img {
+        height: 200px;
     }
 }
 
-@media (min-width: 1200px) {   
+@media (min-width: 1200px) {
+    .banner img {
+        height: 280px;
+    }
+    .search {
+        margin-right: 10px;
+    }
+    .elements-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-size: 14px;
+        padding: 2%;
+    }
 }

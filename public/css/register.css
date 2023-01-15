@@ -189,7 +189,14 @@ main {
 
 .register-form form label{
     display: flex;
-    align-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-inputs {
+    display: flex;
+    gap: 70px;
 }
 
 .register-form form button {
@@ -208,7 +215,12 @@ main {
         justify-content: center;
     }
 }
-
+@media (min-width: 1200px) {
+    .register-form form {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
 
 
 /* -----------------------------FOOTER ------------------*/
@@ -244,11 +256,39 @@ footer {
     margin-bottom: 5px;
 }
 
+.elements-footer i:hover{
+    color: rgb(239, 116, 71);
+}
+
 @media (min-width: 361px) {
 }
 
 @media (min-width: 769px) {
+    .elements-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 12px;
+        padding: 2%;
+    }
+    
+    .banner img {
+        height: 200px;
+    }
 }
 
-@media (min-width: 1200px) {   
+@media (min-width: 1200px) {
+    .banner img {
+        height: 280px;
+    }
+    .search {
+        margin-right: 10px;
+    }
+    .elements-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-size: 14px;
+        padding: 2%;
+    }
 }

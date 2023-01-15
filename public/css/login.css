@@ -164,6 +164,9 @@ button {
     .main-navbar a {
         font-size: 19px;
     }
+    .search {
+        margin-right: 10px;
+    }
 }
 
 /* -----------------------------MAIN ------------------*/
@@ -171,7 +174,7 @@ button {
 main {
     background-color: rgb(225, 221, 221);
     width: 100%;
-    height: 350px;
+    height: 400px;
 }
 
 .login-form {
@@ -188,7 +191,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
     gap: 10px;
+    position: relative;
+    top: 35px;
 }
 
 .login-form input {
@@ -207,7 +213,7 @@ main {
     font-size: 16px;
 }
 
-.login-form button:focus {
+.login-form button:hover {
     background-color: #0022AA;
     color: white;
 }
@@ -215,6 +221,13 @@ main {
 @media (min-width: 768px) {
     .login-form form input, .login-form form button {
         width: 60%;
+    }
+    main {
+        height: 500px;
+    }
+    .login-form form {
+        position: relative;
+        top: 80px;
     }
 }
 
@@ -252,11 +265,35 @@ footer {
     margin-bottom: 5px;
 }
 
+.elements-footer i:hover{
+    color: rgb(239, 116, 71);
+}
+
 @media (min-width: 361px) {
 }
 
 @media (min-width: 769px) {
+    .elements-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 12px;
+        padding: 2%;
+    }
+    .banner img {
+        height: 200px;
+    }
 }
 
 @media (min-width: 1200px) {   
+    .banner img {
+        height: 280px;
+    }
+    .elements-footer{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-size: 14px;
+        padding: 2%;
+    }
 }
