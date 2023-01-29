@@ -394,10 +394,14 @@ footer {
 }
 
 .copy {
-    text-align: left;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 20px;
     margin-left: 5px;
     margin-bottom: 5px;
+}
+
+.elements-footer div {
+    margin: 15px;
 }
 
 .elements-footer i:hover{

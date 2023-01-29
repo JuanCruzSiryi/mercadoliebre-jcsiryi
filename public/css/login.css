@@ -258,11 +258,16 @@ footer {
     margin-top: 10px;
 }
 
+.elements-footer div {
+    margin: 15px;
+}
+
 .copy {
-    text-align: left;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 20px;
     margin-left: 5px;
     margin-bottom: 5px;
+    width: 100%;
 }
 
 .elements-footer i:hover{
